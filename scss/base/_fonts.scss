@@ -1,0 +1,61 @@
+// // * k2d
+// @font-face {
+//     font-family: "k2d";
+//     src: url('../../fonts/k2d/K2D-Light.ttf');
+//     font-style: normal;
+//     font-weight: 400;
+// }
+// // //* khand
+// @font-face {
+//     font-family: "Khand";
+//     src: url('../../fonts/khand/Khand-Regular.ttf'),
+//          url('../../fonts/khand/Khand-Regular.woff');
+//     font-style: normal;
+//     font-weight: 400;
+// }
+
+//  -- google fonts import Khand
+@import url('https://fonts.googleapis.com/css2?family=Khand&display=swap');
+
+//  -- google fonts import K2D
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@300&display=swap');
+
+
+// -- khand
+.khand {
+    font-family: 'Khand' !important;
+    letter-spacing: 1px !important;
+}
+
+//  -- title-large
+.title-large {
+    @include adaptive-value('font-size', 30, 26, 0);
+
+}
+
+// -- title
+.title {
+    @include adaptive-value('font-size', 26, 18, 0);
+}
+
+// -- sub-title
+.sub-title {
+    @include adaptive-value('font-size', 22, 16, 0);
+}
+
+//  -- text
+.text {
+    @include adaptive-value('font-size', 16, 13, 0);
+    @include adaptive-value('line-height', 20, 22, 0);
+}
+
+//  -- text
+.text-smal {
+    @include adaptive-value('font-size', 15, 12, 0);
+    @include adaptive-value('line-height', 20, 22, 0);
+}
+
+//  -- text
+.text-large {
+    @include adaptive-value('font-size', 17, 14, 0);
+}
